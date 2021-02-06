@@ -1,0 +1,315 @@
+/*Header*/
+header {
+  background: url(images/header.jpg) 0 -100px no-repeat;
+  background-size: 100%;
+  height: 300px;
+  position: relative;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header h1 {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+.logo img {
+  position: absolute;
+  left: 0%;
+}
+/*Navigation*/
+.main-menu {
+  font-weight: 400;
+  position: absolute;
+  left: 8%;
+  top: 30%;
+}
+.main-menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-left: 1px solid rgba(4, 147, 114, 1);
+  line-height: 40px;
+  text-transform: uppercase;
+  width: 120px;
+  text-align: center;
+  background: rgba(78, 205, 196, 0.8);
+}
+.main-menu ul li a {
+  text-decoration: none;
+  color: #000;
+}
+.main-menu ul li a:hover {
+  color: #fff;
+}
+.main-menu ul li.active {
+  background: rgba(200, 247, 197, 1);
+  border: none;
+}
+.main-menu ul li.active a {
+  color: #c71585;
+}
+/*Main*/
+main h1 {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(4, 147, 114, 1);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+main p {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+/*Table*/
+table {
+  padding-left: 50px;
+}
+caption {
+  height: 30px;
+  color: #000;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-bottom: 0.8em;
+}
+thead {
+  background: rgba(162, 222, 208, 1);
+  text-align: center;
+}
+tbody {
+  background: rgba(162, 222, 208, 0.6);
+}
+th,
+td {
+  width: 150px;
+  height: 30px;
+  text-align: center;
+}
+/*Video*/
+main video {
+  margin: 20px 0 20px 50px;
+  border: 1px solid;
+}
+/*Main Image*/
+
+/*display as block and size the wrapper of image*/
+#puppylist li {
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+  height: 380px;
+  width: 540px;
+  padding-bottom: 50px;
+}
+#catlist li {
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+  height: 380px;
+  width: 540px;
+  padding-bottom: 50px;
+}
+
+/*Caption right below image with absolute position*/
+#puppylist .caption {
+  position: absolute;
+  left: 45%;
+  bottom: 5%;
+  color: #125688;
+  font-weight: bold;
+}
+#catlist .caption {
+  position: absolute;
+  left: 45%;
+  bottom: 5%;
+  color: #125688;
+  font-weight: bold;
+}
+/*Description invisible*/
+#puppylist .hoverdesc {
+  transition: 0.5s ease-in;
+  position: absolute;
+  left: 25%;
+  bottom: 50%;
+  height: 20px;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+}
+/*position of info box*/
+#dcontainer {
+  position: relative;
+}
+
+#dcontainer #doginfobox {
+  position: absolute;
+  width: 450px;
+  left: 34.5%;
+  bottom: 50%;
+}
+#ccontainner {
+  position: relative;
+}
+#ccontainer #catinfobox {
+  position: absolute;
+  width: 450px;
+  left: 34.5%;
+  bottom: -80%;
+}
+
+#catlist .hoverdesc2 {
+  position: absolute;
+  left: 25%;
+  bottom: 50%;
+  height: 20px;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+}
+/*Description when hover over*/
+#puppylist li:hover .hoverdesc {
+  visibility: visible;
+  opacity: 1;
+}
+#catlist li:hover .hoverdesc2 {
+  visibility: visible;
+  opacity: 1;
+}
+/*Style the intro box*/
+#doginfobox {
+  background: rgba(0, 0, 0, 0.5);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+#doginfobox h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+#doginfobox h3:hover {
+  color: greenyellow;
+}
+
+#catinfobox {
+  background: rgba(0, 0, 0, 0.5);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+#catinfobox h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+#catinfobox h3:hover {
+  color: greenyellow;
+}
+
+/*Donate*/
+.donate form {
+  padding-left: 50px;
+  width: 310px;
+}
+legend {
+  color: rgba(178, 34, 34, 1);
+  font-weight: bold;
+}
+.donate label {
+  margin: 0.5em 0 0.5em 0;
+  font-weight: bold;
+}
+.donate select {
+  width: 50px;
+  height: 25px;
+  text-align: center;
+}
+.donate input {
+  display: block;
+  height: 25px;
+  font-size: 14px;
+  background: rgba(70, 130, 180, 1);
+  color: #fff;
+  margin: 0.5em 0 0.5em 0;
+}
+/*Contact Us*/
+h2 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+form {
+  padding-left: 50px;
+  width: 380px;
+}
+label {
+  font-weight: bold;
+  display: block;
+  margin: 0.5em 0 0.5em 0;
+}
+input {
+  width: 300px;
+}
+input[type="radio"] {
+  width: 25px;
+  margin: 10px 0 10px 0;
+}
+textarea {
+  width: 300px;
+  height: 100px;
+}
+input[type="submit"] {
+  width: 100px;
+  height: 25px;
+  background: rgba(70, 130, 180, 1);
+  color: #fff;
+  margin: 0.5em 0 0.5em 0;
+}
+/*Footer*/
+footer {
+  width: 100%;
+  height: 160px;
+  background-color: rgba(255, 192, 203, 0.6);
+  margin-top: 1em;
+}
+footer #nondisclaimer .copy {
+  padding: 3.5em 3em 3em 3em;
+  float: left;
+  font-size: 0.9em;
+}
+footer #nondisclaimer .social {
+  padding: 3em 3em 3em 3em;
+  margin-right: 3em;
+  float: right;
+}
+footer #disclaimer {
+  clear: both;
+}
+footer #disclaimer {
+  font-size: 0.9em;
+  text-align: center;
+}
+footer #nondisclaimer .social .fa {
+  padding: 15px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 4px;
+  border-radius: 50%;
+}
+footer #nondisclaimer .social .fa:hover {
+  opacity: 0.7;
+}
+footer #nondisclaimer .social .fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+footer #nondisclaimer .social .fa-twitter {
+  background: #55acee;
+  color: white;
+}
+footer #nondisclaimer .social .fa-instagram {
+  background: #125688;
+  color: white;
+}

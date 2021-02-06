@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>So Cal Adoption</title>
+    <meta charset="utf-8" />
+    <!--Style sheet-->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- add font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body onload="hideSelect()">
+    <!-- Container to wrap everything -->
+    <div id="container">
+      <!-- Brand of website-->
+      <header>
+        <div class="logo">
+          <h1>SO CAL ADOPTION</h1>
+          <img src="images/logo.png" alt="So Cal Adoption Logo" width="150" />
+        </div>
+        <!--Main navigation-->
+        <nav class="main-menu">
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="adopt.html">Adopt</a></li>
+            <li class="active"><a href="contactus.html">Contact Us</a></li>
+          </ul>
+          <!--End Main Navigation-->
+        </nav>
+      </header>
+      <!-- Main Content -->
+      <main>
+        <h1>Start your adoption</h1>
+        <p>If you want to adopt a pet, please contact us:</p>
+        <h2>Phone:</h2>
+        <p>(800) ADOPTIT</p>
+        <h2>Email:</h2>
+        <p>info@socaladopt.com</p>
+        <h2>Fill out this form:</h2>
+        <form action="/contact" method="post">
+          <fieldset>
+            <legend>Adoption Form</legend>
+            <label> Enter your full name</label>
+            <input type="text" name="name" />
+            <div class="selectmenu">
+              <label>How should we contact you?</label>
+              <select id="contactmethod">
+                <option id="selectemail">Email</option>
+                <option id="selectphone">Phone</option>
+              </select>
+            </div>
+            <div id="emailselected">
+              <label> Enter your email</label>
+              <input type="email" name="email" />
+            </div>
+            <div id="phoneselected">
+              <label> Enter your phone</label>
+              <input type="tel" name="phone" />
+            </div>
+            <br /><label>Which pet do you want to adopt?</label>
+            <input type="radio" name="pet" value="Cat" />Cat
+            <input type="radio" name="pet" value="Dog" />Dog
+            <label>Please let us know why do you want to adopt a pet</label>
+            <textarea></textarea><br />
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+        <br />
+      </main>
+      <!--Footer Information-->
+      <footer>
+        <div id="nondisclaimer">
+          <div class="copy">&copy; Copyright 2020 :: SoCalAdoption.com</div>
+          <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+          </div>
+        </div>
+        <div id="disclaimer">
+          <p>
+            This website is designed and created solely for educational purposes
+            only at Westcliff University. All contents are not intended for any
+            commercial gain or use.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!--End Container-->
+    <script src="selectcontact.js"></script>
+  </body>
+</html>
