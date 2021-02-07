@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <!-- Container to wrap everything -->
@@ -34,36 +35,23 @@
       <main>
         <h1>Adopt a Puppy</h1>
         <div id="dcontainer">
-          <ul id="puppylist">
-            <!-- pup images 
-            <li><img src="images/pup1.jpg" alt="Grey" width="200" /></li>
-            <li><img src="images/pup2.jpg" alt="Snowball" width="200" /></li>
-            <li><img src="images/pup3.jpg" alt="Sleepy" width="200" /></li>
-            <li><img src="images/pup4.jpg" alt="Yellow" width="200" /></li>
-            <li><img src="images/pup5.jpg" alt="Warmy" width="200" /></li>-->
-          </ul>
+          <ul id="puppylist"></ul>
           <div id="doginfobox"></div>
         </div>
+        <!-- 
+        <li class=photo1><img src='images/pup1.jpg'><h3 class=caption></h3>
+        <p class=hoverdesc></p></li>-->
 
         <h1>Adopt a Kitten</h1>
         <div id="ccontainer">
-          <ul id="catlist">
-            <!--<li><img src="images/cat1.jpg" alt="Walker" width="200" /></li>
-          <li><img src="images/cat2.jpg" alt="Snip" width="200" /></li>
-          <li><img src="images/cat3.jpg" alt="Sunny" width="200" /></li>
-          <li><img src="images/cat4.jpg" alt="Princess" width="200" /></li>
-          <li><img src="images/cat5.jpg" alt="Mimi" width="200" /></li>-->
-          </ul>
+          <ul id="catlist"></ul>
           <div id="catinfobox"></div>
         </div>
-        <!--Caption for kitten
-        <ul class="kittenname">
-          <li>Walker</li>
-          <li>Snip</li>
-          <li>Sunny</li>
-          <li>Princess</li>
-          <li>Mimi</li>
-        </ul>-->
+
+        <div class="backdrop"></div>
+        <div class="lightbox">
+          <div class="close">X</div>
+        </div>
 
         <h1>Donate</h1>
         <div class="donate">
@@ -204,5 +192,7 @@
     </script>
     <!--add external js for open boxes-->
     <script src="galleryinfobox.js"></script>
+    <!--add external js for light box-->
+    <script src="lightbox.js"></script>
   </body>
 </html>
